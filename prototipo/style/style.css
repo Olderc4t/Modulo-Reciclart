@@ -1,0 +1,248 @@
+/*Predefinições*/
+:root{
+    --verdin_claro: rgb(168, 175, 141);
+    --verdin_escuro: rgb(91, 107, 60);
+    --roxin_escuro: rgb(106, 79, 130);
+    --roxin_claro:  rgb(185, 170, 203);
+    --bege_branco: rgb(255, 252, 245);
+    --verde_claro: rgb(206, 217, 192);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+body{
+    background-color: var(--bege_branco);
+}
+
+/*Começo header*/
+header{
+    background-color: var(--roxin_escuro);
+    display: flex;
+    margin: auto;
+    padding: auto;
+    height: 106px;
+    width: 210vh;
+}
+
+
+/*Categorias e usario*/
+header ul{
+    list-style: none;
+}
+
+.categoria{
+    display: flex;
+    margin-bottom: auto;
+    position: relative;
+    top: 73%;
+    color: var(--bege_branco);
+}
+
+.categoria a{
+    color: var(--bege_branco);
+}
+
+
+.categoria li{
+    margin-left: 1%;
+    color: var(--bege_branco);
+    
+}
+
+.categoria li:nth-last-child(2){
+    margin-left: 5px ;
+}
+
+.categoria li:nth-last-child(1){
+    margin-left: 5px ;
+}
+
+.choice{
+    display: flex;
+    margin-bottom: auto;
+    position: relative;
+    list-style-type: none;
+    margin-left:6%;
+    margin-top: 1%;
+    color: var(--bege_branco);
+    margin-bottom: 6%;
+}
+
+.choice a{
+    color: aliceblue;
+    list-style-type: none;
+    position: relative;
+}
+
+.choice li:nth-last-child(2){
+    margin-left: 5px ;
+}
+
+.choice li:nth-last-child(1){
+    margin-left: 5px ;
+}
+
+.fa-cart-shopping{
+    color: var(--bege_branco);
+    font-size: 250%;
+}
+
+.carrinho{
+    position: relative;
+    margin-top: 3%;
+    right: 5.5%;
+    display: flex;
+}
+
+/*Barra de pesquisa*/
+#buscacaixa{
+    margin-left: 15%;
+    margin-top: 1.9%;
+    
+}
+
+.search-container {
+    position: relative;
+    width: 1px;
+    height: 40px;
+}
+
+.search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+
+.search-icon::before {
+    content: '';
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    border: 2px solid purple;
+}
+
+.search-icon::after {
+    content: '';
+    width: 20%;
+    height: 2px;
+    background-color: purple;
+}
+
+.search-input {
+    width: 150%;
+    height: 100%;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding-left: 40px;
+    transition: all 0.7s;
+    background-color: whitesmoke;
+}
+
+.search-input:focus {
+    width: 550px;
+    box-shadow: 2px 2px 5px #777;
+}
+
+.search-input:valid {
+    width: 550px;
+}
+/*fim barra de pesquisa*/
+/*Fim header*/
+main{
+    height: 100vh;
+}
+/*começo footer*/
+footer{
+    background-color: var(--roxin_escuro);
+    height: 190px;
+}
+
+footer a{
+    color: var(--bege_branco);
+}
+
+/* SECTION1*/
+.section1{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: -3%;
+    bottom: -43%;
+    font-size: large;
+    align-items: center;
+    transition: 1s;
+}
+
+.section1 ul, .section2 ul{
+    margin: auto;
+    padding: auto
+    ;
+}
+
+.section2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 11%;
+    bottom: -13%;
+    font-size: large;
+    align-items: center;
+    transition: 1s;
+}
+
+.section1 :hover, .section2 :hover{
+    color: var(--roxin_claro);
+}
+
+/*linha*/
+.barray{
+    background-color: black;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: -40%;
+    width: 80px;
+    border-radius: 2%;
+    rotate: 90deg;
+    padding-top: 1.5px;
+    padding-bottom: 1.5px;
+    
+}
+/*social*/
+.fa-instagram{
+    display: flex;
+    position: absolute;
+    left: 51.6%;
+    font-size: 190%;
+    bottom: -31%; 
+    padding: 0.5%;  
+    border-radius: 10px; 
+    transition: 1s;
+}
+
+.fa-instagram:hover{
+    background-color: var(--roxin_claro);
+    color: var(--verdin_escuro);
+}
+
+/**/
+/**/
+/**/
+/**/
+/**/
+/*Fim footer*/
