@@ -1,0 +1,75 @@
+:root {
+    --verdin_claro: rgb(168, 175, 141);
+    --verdin_escuro: rgb(91, 107, 60);
+    --roxin_escuro: rgb(106, 79, 130);
+    --roxin_claro:  rgb(185, 170, 203);
+    --bege_branco: rgb(255, 252, 245);
+    --verde_claro: rgb(206, 217, 192);
+    --cinza : rgba(217, 217, 217, 1)
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--roxin_claro);
+    opacity: 80%;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    height: 90px;  
+    background-color: var(--bege_branco);
+}
+
+header h1{
+    position: absolute;
+    left: 18% ;
+    top: 3%;
+    color: var(--roxin_escuro);
+}
+
+header p{
+    position: absolute;
+    right: 10%;
+    top: 5%;
+    color: var(--roxin_escuro);
+}
+
+#box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginbox{
+    background-color: var(--bege_branco);
+    width: 400px;
+    height: 450px;
+    margin-top: 3%;
+    border-radius: 5px;
+    display: flex;
+}
+
+#logintxt{
+    position: relative;
+    margin-top: 3%;
+    left: 18%;
+    color: var(--roxin_escuro);
+}
+
+.inputbox{
+    position: relative;
+    margin: 30px ;
+    width: 310px;
+}
+.inputbox label{
+    position: absolute;
+    top: 10%;
+    left: 5px;
+}
+
+#minibox{
+    
+}
