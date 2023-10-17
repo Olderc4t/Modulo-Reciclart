@@ -32,7 +32,6 @@ header p{
     color: var(--roxin_escuro);
 }
 
-
 section{
     display: flex;
     justify-content: center;
@@ -50,7 +49,6 @@ section{
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-
 }
 
 #logintxt{
@@ -59,7 +57,6 @@ section{
     text-align: center;
     top: -10px;
     position: relative;
-   
 }
 
 .inputbox{
@@ -78,10 +75,12 @@ section{
     pointer-events: none;
     transition: .5s;
 }
+
 input:focus ~ label,
 input:valid ~ label{
 top: -5px;    
 }
+
 .inputbox input{
     width: 99%;
     height: 45px;
@@ -102,12 +101,13 @@ top: -5px;
 .forget label input{
     margin-right: 3px;
 }
-.forget label a{
+.forget a{
     color: var(--verdin_escuro);
     text-decoration: none;
 }
-.forget label a:hover{
+.forget a:hover{
     text-decoration: underline;
+
 }
 button{
     width: 100%;
@@ -132,6 +132,13 @@ button{
     color: var(--roxin_escuro);
     font-weight: 600;
 }
-.register p a:hover{
+
+.register a{
+    transition: 0.5s;
+    color: var(--roxin_escuro);
+}
+
+.register a:hover{
     text-decoration: underline;
+    color: black;
 }
