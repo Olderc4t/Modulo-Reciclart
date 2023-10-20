@@ -16,7 +16,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-
 body{
     background-color: var(--bege_branco);
 }
@@ -28,9 +27,7 @@ header{
     margin: auto;
     padding: auto;
     height: 106px;
-    width: 210vh;
 }
-
 
 /*Categorias e usario*/
 header ul{
@@ -40,15 +37,15 @@ header ul{
 .categoria{
     display: flex;
     margin-bottom: auto;
-    position: relative;
-    top: 73%;
+    position: absolute;
+    top: 13%;
+    left: 40%;
     color: var(--bege_branco);
 }
 
 .categoria a{
     color: var(--bege_branco);
 }
-
 
 .categoria li{
     margin-left: 1%;
@@ -67,10 +64,10 @@ header ul{
 .choice{
     display: flex;
     margin-bottom: auto;
-    position: relative;
+    position: absolute;
     list-style-type: none;
-    margin-left:6%;
-    margin-top: 1%;
+    left:83%;
+    top: 3%;
     color: var(--bege_branco);
     margin-bottom: 6%;
 }
@@ -89,79 +86,87 @@ header ul{
     margin-left: 5px ;
 }
 
+.choice a,
+ .categoria a{
+	transition: all 0.5s ease;
+}
+.choice a:hover,
+ .categoria a:hover{
+    color: var(--roxin_claro);
+}
+
 .fa-cart-shopping{
     color: var(--bege_branco);
     font-size: 250%;
 }
 
 .carrinho{
-    position: relative;
-    margin-top: 3%;
-    right: 5.5%;
+    position: absolute;
+    top: 7%;
+    right: 10.5%;
     display: flex;
+}
+
+.taluga {
+    
+    height: 95px;
+    width: 95px;
+    transform: rotate(20deg);
+    cursor: pointer;
+
+}
+
+.spin{
+    position: absolute;
+    left: 6%;
+}
+
+.spin:active {
+    animation: spin 3s linear infinite;
 }
 
 /*Barra de pesquisa*/
-#buscacaixa{
-    margin-left: 15%;
-    margin-top: 1.9%;
-    
-}
 
-.search-container {
-    position: relative;
-    width: 1px;
-    height: 40px;
-}
-
-.search-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+form {
     position: absolute;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    transform: rotate(45deg);
-    cursor: pointer;
-    background-color: whitesmoke;
+    left: 20%;
+    top: 5%;
+    border: 1px solid var(--roxin_escuro);
+    border-radius: 0.3em;
+    width: 50%;
+    padding: 0.3em;  
+    background-color: var(--roxin_claro); 
 }
 
-.search-icon::before {
-    content: '';
-    width: 25%;
-    height: 25%;
-    border-radius: 50%;
-    border: 2px solid purple;
-}
-
-.search-icon::after {
-    content: '';
-    width: 20%;
-    height: 2px;
-    background-color: purple;
-}
-
-.search-input {
-    width: 150%;
-    height: 100%;
-    border-radius: 20px;
+form .searchi, form button {
+    font-size: 1em;
+    border-radius: 0.2em;
     border: none;
+    padding: 0.2em;
+
+}
+
+
+form .searchi{
+    width: 94%;
+    background: none;
+    z-index: 3;
+    color: rgb(59, 59, 59);
     outline: none;
-    padding-left: 40px;
-    transition: all 0.7s;
-    background-color: whitesmoke;
+    
+
 }
 
-.search-input:focus {
-    width: 550px;
-    box-shadow: 2px 2px 5px #777;
+
+form button {
+    cursor: pointer;
+    background: var(--roxin_escuro);
+    color: var(--bege_branco);
+    padding: 0.38em;
 }
 
-.search-input:valid {
-    width: 550px;
-}
 /*fim barra de pesquisa*/
+
 /*Fim header*/
 main{
     height: 100vh;
@@ -180,9 +185,10 @@ footer a{
 .section1{
     display: flex;
     flex-direction: column;
-    position: relative;
-    left: -3%;
-    bottom: -43%;
+    position: absolute;
+    width: 10%;
+    left: 42%;
+    bottom: -40%;
     font-size: large;
     align-items: center;
     transition: 1s;
@@ -190,37 +196,46 @@ footer a{
 
 .section1 ul, .section2 ul{
     margin: auto;
-    padding: auto
-    ;
+    padding: auto;
 }
 
 .section2{
     display: flex;
     flex-direction: column;
-    position: relative;
-    left: 11%;
-    bottom: -13%;
-    font-size: large;
+    position: absolute;
     align-items: center;
-    transition: 1s;
+    left: 50%;
+    width: 20%;
+    bottom: -38%;
+    font-size: large;
+	transition: all 0.5s ease;
 }
 
-.section1 :hover, .section2 :hover{
+.section2 li:nth-child(2){
+    margin-top: 1%;
+}
+
+.section1 a,
+ .section2 a{
+	transition: all 0.5s ease;
+}
+.section1 a:hover,
+ .section2 a:hover{
     color: var(--roxin_claro);
 }
 
 /*linha*/
 .barray{
-    background-color: black;
+    background-color: var(--bege_branco);
     display: flex;
     position: absolute;
     left: 50%;
-    bottom: -40%;
+    bottom: -35%;
     width: 80px;
     border-radius: 2%;
     rotate: 90deg;
-    padding-top: 1.5px;
-    padding-bottom: 1.5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
     
 }
 /*social*/
@@ -229,20 +244,30 @@ footer a{
     position: absolute;
     left: 51.6%;
     font-size: 190%;
-    bottom: -31%; 
+    bottom: -26%; 
     padding: 0.5%;  
     border-radius: 10px; 
-    transition: 1s;
+	transition: all 1.5s ease;
 }
 
 .fa-instagram:hover{
     background-color: var(--roxin_claro);
-    color: var(--verdin_escuro);
 }
 
 /**/
 /**/
 /**/
-/**/
-/**/
+
+
 /*Fim footer*/
+
+/*easter egg*/
+@keyframes spin {
+    0% {
+         transform: rotate(0deg);
+    }
+    100% {
+         transform: rotate(360deg);
+    }
+ }
+ /*Fim easter egg*/
