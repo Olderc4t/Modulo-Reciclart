@@ -19,18 +19,16 @@
 body{
     background-color: var(--bege_branco);
 }
-
+/*Fim de predefinições*/
 /*Começo header*/
-header{
+.header{
     background-color: var(--roxin_escuro);
-    display: flex;
-    margin: auto;
-    padding: auto;
+    display: absolute;
     height: 106px;
+    box-shadow: 10px 10px 10px 10px gray;
 }
-
-/*Categorias e usario*/
-header ul{
+    /*Categorias e usario*/
+.header ul{
     list-style: none;
 }
 
@@ -94,7 +92,8 @@ header ul{
  .categoria a:hover{
     color: var(--roxin_claro);
 }
-
+    /*Fim Categorias e usario*/
+    /*Icone carrinho de mercado*/
 .fa-cart-shopping{
     color: var(--bege_branco);
     font-size: 250%;
@@ -102,32 +101,14 @@ header ul{
 
 .carrinho{
     position: absolute;
-    top: 7%;
-    right: 10.5%;
+    top: 8%;
+    right: 9.8%;
     display: flex;
 }
+    /*Fim Icone carrinho de mercado*/
 
-.taluga {
-    
-    height: 95px;
-    width: 95px;
-    transform: rotate(20deg);
-    cursor: pointer;
-
-}
-
-.spin{
-    position: absolute;
-    left: 6%;
-}
-
-.spin:active {
-    animation: spin 3s linear infinite;
-}
-
-/*Barra de pesquisa*/
-
-form {
+    /*Barra de pesquisa*/
+.pesquisa {
     position: absolute;
     left: 20%;
     top: 5%;
@@ -138,35 +119,29 @@ form {
     background-color: var(--roxin_claro); 
 }
 
-form .searchi, form button {
-    font-size: 1em;
+.pesquisa .searchi, form button {
+    font-size: 0.8em;
     border-radius: 0.2em;
     border: none;
     padding: 0.2em;
 
 }
 
-
-form .searchi{
+.pesquisa .searchi{
     width: 94%;
     background: none;
     z-index: 3;
     color: rgb(59, 59, 59);
     outline: none;
-    
-
 }
 
-
-form button {
+.lupa{
     cursor: pointer;
     background: var(--roxin_escuro);
     color: var(--bege_branco);
     padding: 0.38em;
 }
-
-/*fim barra de pesquisa*/
-
+    /*Fim barra de pesquisa*/
 /*Fim header*/
 main{
     height: 100vh;
@@ -180,8 +155,7 @@ footer{
 footer a{
     color: var(--bege_branco);
 }
-
-/* SECTION1*/
+    /* SECTION1*/
 .section1{
     display: flex;
     flex-direction: column;
@@ -223,8 +197,7 @@ footer a{
  .section2 a:hover{
     color: var(--roxin_claro);
 }
-
-/*linha*/
+    /*linha*/
 .barray{
     background-color: var(--bege_branco);
     display: flex;
@@ -236,9 +209,9 @@ footer a{
     rotate: 90deg;
     padding-top: 1px;
     padding-bottom: 1px;
-    
 }
-/*social*/
+    /*Fim linha*/
+    /*social*/
 .fa-instagram{
     display: flex;
     position: absolute;
@@ -253,21 +226,139 @@ footer a{
 .fa-instagram:hover{
     background-color: var(--roxin_claro);
 }
-
-/**/
-/**/
-/**/
-
-
 /*Fim footer*/
+/*Cadastro e login
+    -DioXD */
+.cabecalhocadastrolog{
+    height: 90px;  
+    background-color: var(--bege_branco);
+    box-shadow: 1px 8px 20px 1px gray;
+}
 
-/*easter egg*/
-@keyframes spin {
-    0% {
-         transform: rotate(0deg);
-    }
-    100% {
-         transform: rotate(360deg);
-    }
- }
- /*Fim easter egg*/
+.cabecalhocadastrologder h1{
+    position: absolute;
+    left: 18% ;
+    top: 3%;
+    color: var(--roxin_escuro);
+}
+
+.cabecalhocadastrolog p{
+    position: absolute;
+    right: 10%;
+    top: 5%;
+    color: var(--roxin_escuro);
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.loginbox{
+    position: relative;
+    width: 30%;
+    height: 450px;
+    background-color: var(--cinza);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: -6px 10px 20px 1px gray;}
+
+#logintxt{
+    font-size: 2em;
+    color: var(--roxin_escuro);
+    text-align: center;
+    top: -10px;
+    position: relative;
+}
+
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 100%;
+    border-bottom: 2px solid var(--roxin_escuro);
+}
+
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
+    color: var(--roxin_escuro);
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;    
+}
+
+.inputbox input{
+    width: 99%;
+    height: 45px;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 1em;
+    padding:0 0% 0 5px;
+    color: var(--roxin_escuro);
+}
+
+.forget{
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: var(--roxin_escuro);
+    display: flex;
+    justify-content: center;
+}
+
+.forget label input{
+    margin-right: 3px;
+}
+
+.forget label a{
+    color: var(--verdin_escuro);
+    text-decoration: none;
+}
+
+.forget label a:hover{
+    text-decoration: underline;
+}
+
+.btn-login{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+    background: var(--roxin_escuro);
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--bege_branco);
+}
+
+.register{
+    font-size: .9em;
+    color: var(--roxin_escuro);
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p{
+    text-decoration: none;
+    color: var(--roxin_escuro);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.register p a:hover{
+    text-decoration: underline;
+}
+/*Fim Cadastro e login*/
