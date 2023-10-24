@@ -272,15 +272,17 @@ section{
     font-size: 2em;
     color: var(--roxin_escuro);
     text-align: center;
-    top: -10px;
+    top: 10px;
     position: relative;
 }
 
 .inputbox{
     position: relative;
+    height: auto;
     margin: 30px 0;
     width: 100%;
     border-bottom: 2px solid var(--roxin_escuro);
+
 }
 
 .inputbox label{
@@ -290,7 +292,7 @@ section{
     transform: translateY(-50%);
     color: var(--roxin_escuro);
     font-size: 1em;
-    pointer-events: none;
+    pointer-events:none;
     transition: .5s;
 }
 
@@ -306,7 +308,7 @@ top: -5px;
     outline: none;
     border: none;
     font-size: 1em;
-    padding:0 0% 0 5px;
+    padding:0 0% 0 100px;
     color: var(--roxin_escuro);
 }
 
