@@ -33,7 +33,21 @@
         </ul>
         <a href="" class="carrinho"><i class="fa-solid fa-cart-shopping"></i></a>
     </header>
-    <main></main>
+    <main class="slider">
+        <div class="carousel">
+            <div class="slide active" style="background-image: url('../imgs/imagem1.png');"></div>
+            <div class="slide" style="background-image: url('../imgs/imagem3.jpg')"></div>
+            <div class="slide" style="background-image: url('../imgs/imagem2.jpg');"></div>
+        </div>
+        <div class="controls">
+            <div class="indicators">
+                <span class="indicator active" onclick="showSlide(0)"></span>
+                <span class="indicator" onclick="showSlide(1)"></span>
+                <span class="indicator" onclick="showSlide(2)"></span>
+            </div>
+        </div>
+    </main>
+
     <footer>
         <!--mudar de abas-->
         <ul class="section1">
@@ -54,5 +68,6 @@
         </ul>
     </footer>
 </body>
+<script src="../script/script.js"></script>
 <script src="https://kit.fontawesome.com/2029ff0c37.js" crossorigin="anonymous"></script>
 </html>
