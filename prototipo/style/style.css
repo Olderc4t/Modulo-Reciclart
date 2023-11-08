@@ -177,7 +177,7 @@ body{
 
 .carousel {
     position: relative;
-    width: 500px;
+    width: 1000px;
     height: 300px;
     overflow: hidden;
 }
@@ -190,7 +190,6 @@ body{
     transition: opacity 1s ease-in-out;
     background-size: cover;
     background-position: center;
-    border-radius: 5%;
 }
 
 .active {
@@ -202,7 +201,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: -50px;
+    z-index: 99;
 }
 
 .indicators {
@@ -214,7 +214,7 @@ body{
     width: 15px;
     height: 15px;
     background-color: #888;
-    border-radius: 10%;
+    border-radius: 50%;
     margin: 0 5px;
     cursor: pointer;
 }
@@ -228,22 +228,27 @@ body{
 footer{
     background-color: var(--roxin_escuro);
     height: 190px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 6;
 }
 
 footer a{
-    color: var(--bege_branco);
+    color: black;
 }
     /* SECTION1*/
 .section1{
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     width: 10%;
     left: 42%;
-    bottom: -40%;
+    bottom: 7%;
     font-size: large;
     align-items: center;
     transition: 1s;
+    z-index: 99;
 }
 
 .section1 ul, .section2 ul{
@@ -254,13 +259,15 @@ footer a{
 .section2{
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     align-items: center;
     left: 50%;
     width: 20%;
-    bottom: -38%;
+    bottom: 8%;
     font-size: large;
 	transition: all 0.5s ease;
+    z-index: 99;
+
 }
 
 .section2 li:nth-child(2){
@@ -277,16 +284,18 @@ footer a{
 }
     /*linha*/
 .barray{
-    background-color: var(--bege_branco);
+    background-color: black;
     display: flex;
-    position: absolute;
+    position:fixed;
     left: 50%;
-    bottom: -35%;
+    bottom: 12%;
     width: 80px;
     border-radius: 2%;
     rotate: 90deg;
     padding-top: 1px;
     padding-bottom: 1px;
+    z-index: 99;
+
 }
     /*Fim linha*/
     /*social*/
@@ -295,10 +304,12 @@ footer a{
     position: absolute;
     left: 51.6%;
     font-size: 190%;
-    bottom: -26%; 
+    bottom: 65%; 
     padding: 0.5%;  
     border-radius: 10px; 
 	transition: all 1.5s ease;
+    z-index: 99;
+
 }
 
 .fa-instagram:hover{
