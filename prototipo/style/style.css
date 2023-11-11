@@ -35,9 +35,12 @@ body{
     position: absolute;
     left: 5%;
     top: 7%;
-    background-color: red;
-    width: 40px;
-    height: 40px;
+    width: 80%;
+    height: 80%;
+}
+
+.taluga{
+    z-index: 99;
 }
 
 .join{
@@ -123,8 +126,8 @@ body{
 
 .carrinho{
     position: absolute;
-    top: 8%;
-    right: 9.8%;
+    top: 6%;
+    right: 12%;
     display: flex;
 }
     /*Fim Icone carrinho de mercado*/
@@ -132,11 +135,11 @@ body{
     /*Barra de pesquisa*/
 .pesquisa {
     position: absolute;
-    left: 20%;
+    left: 30%;
     top: 5%;
     border: 1px solid var(--roxin_escuro);
     border-radius: 0.3em;
-    width: 50%;
+    width: 30%;
     padding: 0.3em;  
     background-color: var(--roxin_claro); 
 }
@@ -146,7 +149,6 @@ body{
     border-radius: 0.2em;
     border: none;
     padding: 0.2em;
-
 }
 
 .pesquisa .searchi{
@@ -171,8 +173,8 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column; 
-    height: 100vh;
     overflow: hidden;
+    min-height: 45vh;
 }
 
 .carousel {
@@ -224,22 +226,22 @@ body{
 }
 
 /*fim carrosel*/
-
 /*Cards de venda*/
 .aglome{
     display: flex;
     justify-content: center;
     align-items: center;
-    height:100vh ;
-    gap: 16px;
+    gap: 12px;
+    min-height: 38vh
 }
+
 
 .card{
     background-color: var(--bege_branco);
     width: 180px;
     height: 260px;
     border-radius: 12px;
-    box-shadow: 4px 4px 12px gray;
+    box-shadow: 2px 2px 10px gray;
 }
 
 .card img{
@@ -266,18 +268,6 @@ body{
     font-size: .9rem;
     color: var(--verdin_escuro);
 }
-
-.card button{
-    background-color: var(--roxin_claro);
-    height: 30px;
-    border: none;
-    padding: 4px;
-    width: 80%;
-    color: var(--bege_branco);
-    font-size: 1rem;
-    font-weight: bold;
-    border: radius 10px;;
-}
 /*Cards fim*/
 
 
@@ -286,23 +276,22 @@ footer{
     height: 190px;
     width: 100%;
     position: relative;
-
     bottom: 0;
     z-index: 6;
     background-color: var(--roxin_escuro);
 }
 
 footer a{
-    color: black;
+    color: var(--bege_branco);
 }
     /* SECTION1*/
 .section1{
     display: flex;
     flex-direction: column;
-    position: relative;
+    position: absolute;
     width: 10%;
-    left: 42%;
-    top: 48%;
+    left: 43%;
+    top: 38%;
     font-size: large;
     align-items: center;
     transition: 1s;
@@ -317,15 +306,13 @@ footer a{
 .section2{
     display: flex;
     flex-direction: column;
-    position: relative;
+    position: absolute;
     align-items: center;
-    left: 50%;
-    width: 20%;
-    top: -5%;
+    left: 54%;
+    top: 40%;
     font-size: large;
 	transition: all 0.5s ease;
     z-index: 99;
-
 }
 
 .section2 li:nth-child(2){
@@ -342,11 +329,11 @@ footer a{
 }
     /*linha*/
 .barray{
-    background-color: black;
+    background-color: var(--bege_branco);
     display: flex;
-    position:relative;
+    position:absolute;
     left: 50%;
-    top: 8%;
+    top: 60%;
     width: 80px;
     border-radius: 2%;
     rotate: 90deg;
@@ -359,15 +346,14 @@ footer a{
     /*social*/
 .fa-instagram{
     display: flex;
-    position: relative;
-    left: 52%;
+    position: absolute;
+    left: 51%;
+    top: 10%;
     font-size: 190%;
-    top: 100%;
     padding: 0.5%;  
     border-radius: 10px; 
 	transition: all 1.5s ease;
     z-index: 99;
-
 }
 
 .fa-instagram:hover{
@@ -396,7 +382,7 @@ footer a{
     color: var(--roxin_escuro);
 }
 
-section{
+.kbsalho{
     display: flex;
     justify-content: center;
     align-items: center;
