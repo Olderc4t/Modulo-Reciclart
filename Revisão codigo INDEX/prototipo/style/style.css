@@ -1,0 +1,512 @@
+/*Predefinições*/
+:root{
+    --verdin_claro: rgb(168, 175, 141);
+    --verdin_escuro: rgb(91, 107, 60);
+    --roxin_escuro: rgb(106, 79, 130);
+    --roxin_claro:  rgb(185, 170, 203);
+    --bege_branco: rgb(255, 252, 245);
+    --verde_claro: rgb(206, 217, 192);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: var(--bege_branco);
+}
+/*Fim de predefinições*/
+/*Começo header*/
+.header{
+    background-color: var(--roxin_escuro);
+    display: absolute;
+    height: 106px;
+}
+    /*Categorias e usario*/
+.header ul{
+    list-style: none;
+}
+/*
+.spin{
+    position: absolute;
+    left: 5%;
+    top: 7%;
+    width: 80%;
+    height: 80%;
+}
+
+.taluga{
+    z-index: 99;
+}
+*/
+
+.join{
+    color: var(--bege_branco);
+    position: absolute;
+    left: 3%;
+    top: 3%;
+}
+
+.join a{
+    list-style: none;
+    color: var(--bege_branco);
+}
+
+.categoria{
+    display: flex;
+    margin-bottom: auto;
+    position: absolute;
+    top: 13%;
+    left: 40%;
+    color: var(--bege_branco);
+}
+
+.categoria a{
+    color: var(--bege_branco);
+}
+
+.categoria li{
+    margin-left: 1%;
+    color: var(--bege_branco);
+    
+}
+
+.categoria li:nth-last-child(2){
+    margin-left: 5px ;
+}
+
+.categoria li:nth-last-child(1){
+    margin-left: 5px ;
+}
+
+.choice{
+    display: flex;
+    margin-bottom: auto;
+    position: absolute;
+    list-style-type: none;
+    left:83%;
+    top: 3%;
+    color: var(--bege_branco);
+    margin-bottom: 6%;
+}
+
+.choice a{
+    color: aliceblue;
+    list-style-type: none;
+    position: relative;
+}
+
+.choice li:nth-last-child(2){
+    margin-left: 5px ;
+}
+
+.choice li:nth-last-child(1){
+    margin-left: 5px ;
+}
+
+.choice a,
+ .categoria a,
+ .join a{
+	transition: all 0.5s ease;
+}
+.choice a:hover,
+ .categoria a:hover,
+ .join a:hover{
+    color: var(--roxin_claro);
+}
+    /*Fim Categorias e usario*/
+    /*Icone carrinho de mercado*/
+.fa-cart-shopping{
+    color: var(--bege_branco);
+    font-size: 250%;
+}
+
+.carrinho{
+    position: absolute;
+    top: 6%;
+    right: 12%;
+    display: flex;
+}
+    /*Fim Icone carrinho de mercado*/
+
+    /*Barra de pesquisa*/
+.pesquisa {
+    position: absolute;
+    left: 30%;
+    top: 5%;
+    border: 1px solid var(--roxin_escuro);
+    border-radius: 0.3em;
+    width: 30%;
+    padding: 0.3em;  
+    background-color: var(--roxin_claro); 
+}
+
+.pesquisa .searchi, form button {
+    font-size: 0.8em;
+    border-radius: 0.2em;
+    border: none;
+    padding: 0.2em;
+}
+
+.pesquisa .searchi{
+    width: 94%;
+    background: none;
+    z-index: 3;
+    color: rgb(59, 59, 59);
+    outline: none;
+}
+
+.lupa{
+    cursor: pointer;
+    background: var(--roxin_escuro);
+    color: var(--bege_branco);
+    padding: 0.38em;
+}
+    /*Fim barra de pesquisa*/
+/*Fim header*/
+/*carrosel*/
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    overflow: hidden;
+    min-height: 45vh;
+}
+
+.carousel {
+    position: relative;
+    top: 5vh;
+    width: 1000px;
+    height: 300px;
+    overflow: hidden;
+    
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    background-size: cover;
+    background-position: center;
+}
+
+.active {
+    opacity: 1;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+    z-index: 99;
+}
+
+.indicators {
+    display: flex;
+    margin-top: 10px; 
+}
+
+.indicator {
+    width: 15px;
+    height: 15px;
+    background-color: #888;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: #333;
+}
+
+/*fim carrosel*/
+/*Cards de venda*/
+.aglome {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 13%; 
+    margin-bottom: 40px;
+    margin-top: 90px;
+    
+  }
+  
+  .card {
+    width: calc(25% - 20px); 
+    background-color: var(--bege_branco);
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 10px gray;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 130px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  
+  .card div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; 
+  }
+  
+  .card h1 {
+    font-size: 1.2rem;
+  }
+  
+  .card h2 {
+    font-size: .9rem;
+    color: var(--verdin_escuro);
+  }
+  
+  .card span {
+    font-size: 1rem;
+    color: var(--verdin_escuro);
+  }
+  
+  
+/*Cards fim*/
+
+
+/*começo footer*/
+footer{
+    height: 190px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    z-index: 6;
+    background-color: var(--roxin_escuro);
+}
+
+footer a{
+    color: var(--bege_branco);
+}
+    /* SECTION1*/
+.section1{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 10%;
+    left: 43%;
+    top: 38%;
+    font-size: large;
+    align-items: center;
+    transition: 1s;
+    z-index: 99;
+}
+
+.section1 ul, .section2 ul{
+    margin: auto;
+    padding: auto;
+}
+
+.section2{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    left: 54%;
+    top: 40%;
+    font-size: large;
+	transition: all 0.5s ease;
+    z-index: 99;
+}
+
+.section2 li:nth-child(2){
+    margin-top: 1%;
+}
+
+.section1 a,
+ .section2 a{
+	transition: all 0.5s ease;
+}
+.section1 a:hover,
+ .section2 a:hover{
+    color: var(--roxin_claro);
+}
+    /*linha*/
+.barray{
+    background-color: var(--bege_branco);
+    display: flex;
+    position:absolute;
+    left: 50%;
+    top: 60%;
+    width: 80px;
+    border-radius: 2%;
+    rotate: 90deg;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    z-index: 99;
+
+}
+    /*Fim linha*/
+    /*social*/
+.fa-instagram{
+    display: flex;
+    position: absolute;
+    left: 51%;
+    top: 10%;
+    font-size: 190%;
+    padding: 0.5%;  
+    border-radius: 10px; 
+	transition: all 1.5s ease;
+    z-index: 99;
+}
+
+.fa-instagram:hover{
+    background-color: var(--roxin_claro);
+}
+/*Fim footer*/
+/*Cadastro e login
+    -DioXD */
+.cabecalhocadastrolog{
+    height: 90px;  
+    background-color: var(--bege_branco);
+    box-shadow: 1px 8px 20px 1px gray;
+}
+
+.cabecalhocadastrologder h1{
+    position: absolute;
+    left: 18% ;
+    top: 3%;
+    color: var(--roxin_escuro);
+}
+
+.cabecalhocadastrolog p{
+    position: absolute;
+    right: 10%;
+    top: 5%;
+    color: var(--roxin_escuro);
+}
+
+.kbsalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.loginbox{
+    position: relative;
+    width: 30%;
+    height: 450px;
+    background-color: var(--cinza);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: -6px 10px 20px 1px gray;}
+
+#logintxt{
+    font-size: 2em;
+    color: var(--roxin_escuro);
+    text-align: center;
+    top: 10px;
+    position: relative;
+}
+
+.inputbox{
+    position: relative;
+    height: auto;
+    margin: 30px 0;
+    width: 100%;
+    border-bottom: 2px solid var(--roxin_escuro);
+
+}
+
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
+    color: var(--roxin_escuro);
+    font-size: 1em;
+    pointer-events:none;
+    transition: .5s;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;    
+}
+
+.inputbox input{
+    width: 99%;
+    height: 45px;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 1em;
+    padding:0 0% 0 100px;
+    color: var(--roxin_escuro);
+}
+
+.forget{
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: var(--roxin_escuro);
+    display: flex;
+    justify-content: center;
+}
+
+.forget label input{
+    margin-right: 3px;
+}
+
+.forget label a{
+    color: var(--verdin_escuro);
+    text-decoration: none;
+}
+
+.forget label a:hover{
+    text-decoration: underline;
+}
+
+.btn-login{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+    background: var(--roxin_escuro);
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--bege_branco);
+}
+
+.register{
+    font-size: .9em;
+    color: var(--roxin_escuro);
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p{
+    text-decoration: none;
+    color: var(--roxin_escuro);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.register p a:hover{
+    text-decoration: underline;
+}
+/*Fim Cadastro e login*/
