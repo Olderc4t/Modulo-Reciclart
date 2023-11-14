@@ -404,7 +404,7 @@ footer a {
 }
 
 .cabecalhocadastrolog {
-    height: 90px;
+    height: 110px;
     background-color: var(--bege_branco);
     box-shadow: 1px 8px 20px 1px gray;
 }
@@ -542,6 +542,184 @@ input:valid~label {
 }
 
 /*Fim Cadastro e login*/
+
+/*começo cadatro vendedor*/
+
+.imagefundo {
+    background-color: black;
+    position: relative;
+    z-index: -8;
+    margin-bottom: -5px;
+}
+
+.background-image {
+    width: 100%;
+    position: relative;
+    z-index: -7;
+    margin-top: 1px;
+    opacity: 75%;
+}
+
+.box-cadastro {
+    position: relative;
+    z-index: 101;
+    text-align: center;
+    top: 50%;
+    background-color: var(--bege_branco);
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    margin-top: -45%;
+    margin-bottom: 10%;
+}
+
+.dentro {
+    margin: 5% 10% 10% 10%;
+}
+
+.dentro h1 {
+    color: var(--roxin_escuro);
+    font-size: 2em;
+    margin-top: 5%;
+}
+
+.dentro p {
+    color: var(--roxin_escuro);
+    margin-top: 10%;
+    margin-bottom: 12%;
+    font-size: 1.3em;
+}
+
+.btn-vendedor {
+    width: 70%;
+    height: 0px;
+    border-radius: 10px;
+    border: none;
+    background: var(--roxin_escuro);
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--bege_branco);
+    padding: 2% 10% 2% 10%;
+}
+
+/*fim cadatro vendedor*/
+
+/*começo formulario vendedor*/
+.box-form {
+    background-color: var(--bege_branco);
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.box-form p {
+    font-size: 1.7em;
+    color: var(--roxin_escuro);
+    margin-bottom: 3%;
+    margin-top: 3%;
+    margin-left: 10%;
+
+}
+
+.boxbox {
+    max-width: 50%;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+.texto {
+    font-size: 1.3em;
+    color: var(--roxin_escuro);
+    margin-bottom: 2%;
+    margin-left: 7%;
+    max-width: 100%;
+    position: relative;
+}
+
+.texto1{
+    width: 69%;
+}
+
+.texto2{
+    width: 81%;
+}
+
+.texto3{
+    width: 64%;
+}
+
+.texto4{
+    width: 70%;
+}
+
+.texto5{
+    width: 75%;
+}
+
+.texto6{
+    width: 80%;
+}
+
+.texto7{
+    width: 45%;
+}
+
+.texto8{
+    width: 36%;
+}
+
+.texto9{
+    width: 45%;
+}
+
+.texto10{
+    width: 36%;
+}
+
+.texto11{
+    width: 87%;
+}
+
+.boxbox input {
+    border-radius: 20px;
+    margin-top: 2%;
+    color: var(--roxin_escuro);
+    padding: 2%;
+    position: relative;
+}
+
+
+.endereco {
+    margin-bottom: 5%;
+
+}
+
+.btn-form{
+    position: absolute;
+    left: 36%;
+    width: 30%;
+    border-radius: 15px;
+    border: none;
+    background: var(--roxin_escuro);
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--bege_branco);
+    padding: 1%;
+    
+}
+
+
+/*fim formulario vendedor*/
 
 
 @media only screen and (max-width: 770px) {
