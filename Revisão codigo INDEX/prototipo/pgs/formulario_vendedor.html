@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro usuario</title>
     <link rel="stylesheet" href="../style/style.css">
 </head>
@@ -14,51 +16,54 @@
         </div>
     </header>
     <section class="box-form">
-        <div class="for-value">
-            <p> Informações para Identificação Fiscal</p>
-            <div class="boxbox">
-                <form action="" method="post">
-                    <div class="texto">
-                        <label> Nome completo:</label>
-                        <input type="text" class="texto1" placeholder="Inseira seu nome" required><br>
-                    </div>
-                    <div class="texto">
-                        <label>CPF:</label>
-                        <input type="text" class="texto2" placeholder="000.000.000-00" maxlength="14" required><br>
-                    </div>
-                    <div class="texto">
-                        <label>Data de nascimento:</label>
-                        <input type="date" class="texto3" name="dataNascimento" required><br>
-                    </div>
-            </div>
-                    <p>Informações da loja</p>
-            <div class="boxbox">
-                    <div class="texto">
-                        <label>Nome da loja:</label>
-                        <input type="text" class="texto4" placeholder="" maxlength="65" required><br>
-                    </div>
-                    <div class="texto">
-                        <label>Telefone:</label>
-                        <input type="tel" class="texto5" placeholder="+55 Telefone" required><br>
-                    </div>
-                    <div class="texto">
-                        <label>CEP:</label>
-                        <input type="text" class="texto6" placeholder="CEP" maxlength="9" required><br>
-                    </div>
-                    <div class="texto">
-                        <label>Endereço:</label>
-                        <div class="endereco">
-                            <input type="text" class="texto7" placeholder="cidade" required>
-                            <input type="text" class="texto8" placeholder="Bairro" required><br>
-                            <input type="text" class="texto9" placeholder="Rua" maxlength="8" required>
-                            <input type="number" class="texto10" placeholder="Número" required> <br>
-                            <input type="text" class="texto11" placeholder="Completo opcional"> <br>
+        <main class="box">
+            <div class="for-value">
+                <p> Informações para Identificação Fiscal</p>
+                <div class="boxbox">
+                    <form action="" method="post">
+                        <div class="texto">
+                            <label> Nome completo:</label><br>
+                            <input type="text" class="texto1" placeholder="Inseira seu nome" required><br>
                         </div>
-                        <button class="btn-form">Cadastrar</button>
-                    </div>
-                </form>
+                        <div class="texto">
+                            <label>CPF:</label><br>
+                            <input type="text" class="texto2" placeholder="000.000.000-00" maxlength="14" required><br>
+                        </div>
+                        <div class="texto">
+                            <label>Data de nascimento:</label><br>
+                            <input type="date" class="texto3" name="dataNascimento" required><br>
+                        </div>
+                </div>
+                <main class="linha"></main>
+                        <p>Informações da loja</p>
+                <div class="boxbox">
+                        <div class="texto">
+                            <label>Nome da loja:</label><br>
+                            <input type="text" class="texto4" placeholder="" maxlength="65" required><br>
+                        </div>
+                        <div class="texto">
+                            <label>Telefone:</label><br>
+                            <input type="tel" class="texto5" placeholder="+55 Telefone" required><br>
+                        </div>
+                        <div class="texto">
+                            <label>CEP:</label><br>
+                            <input type="text" class="texto6" placeholder="CEP" maxlength="9" required><br>
+                        </div>
+                        <div class="texto">
+                            <label>Endereço:</label><br>
+                            <div class="endereco">
+                                <input type="text" class="texto7" placeholder="cidade" required>
+                                <input type="text" class="texto8" placeholder="Bairro" required><br>
+                                <input type="text" class="texto9" placeholder="Rua" maxlength="8" required>
+                                <input type="number" class="texto10" placeholder="Número" required> <br>
+                                <input type="text" class="texto11" placeholder="Completo opcional"> <br>
+                                <button class="btn-form">Cadastrar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>
+        </main>
     </section>
     <footer>
         <!--mudar de abas-->

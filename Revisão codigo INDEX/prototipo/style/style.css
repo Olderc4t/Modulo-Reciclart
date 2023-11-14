@@ -462,10 +462,13 @@ footer a {
 
 }
 
+.input{
+    margin-left: -30%;
+}
 .inputbox label {
     position: absolute;
     top: 50%;
-    left: 3%;
+    left: 1%;
     transform: translateY(-50%);
     color: var(--roxin_escuro);
     font-size: 1em;
@@ -479,14 +482,14 @@ input:valid~label {
 }
 
 .inputbox input {
-    width: 99%;
+    width: 90%;
     height: 45px;
-    background: transparent;
     outline: none;
     border: none;
     font-size: 1em;
     padding: 0 0% 0 100px;
     color: var(--roxin_escuro);
+    background: transparent;
 }
 
 .forget {
@@ -546,23 +549,18 @@ input:valid~label {
 /*começo cadatro vendedor*/
 
 .imagefundo {
-    background-color: black;
-    position: relative;
-    z-index: -8;
-    margin-bottom: -5px;
-}
-
-.background-image {
     width: 100%;
     position: relative;
-    z-index: -7;
-    margin-top: 1px;
-    opacity: 75%;
+    margin-bottom: 15%;
+    opacity: 85%;
+}
+.background-image {
+    width: 100%;
 }
 
 .box-cadastro {
     position: relative;
-    z-index: 101;
+    z-index: 100;
     text-align: center;
     top: 50%;
     background-color: var(--bege_branco);
@@ -572,9 +570,10 @@ input:valid~label {
     flex-direction: column;
     justify-content: center;
     border-radius: 20px;
-    margin-top: -45%;
+    margin-top: -55%;
     margin-bottom: 10%;
 }
+
 
 .dentro {
     margin: 5% 10% 10% 10%;
@@ -595,7 +594,7 @@ input:valid~label {
 
 .btn-vendedor {
     width: 70%;
-    height: 0px;
+    margin-bottom: 20%;
     border-radius: 10px;
     border: none;
     background: var(--roxin_escuro);
@@ -607,7 +606,7 @@ input:valid~label {
     padding: 2% 10% 2% 10%;
 }
 
-/*fim cadatro vendedor*/
+/*fim cadastro vendedor*/
 
 /*começo formulario vendedor*/
 .box-form {
@@ -632,7 +631,16 @@ input:valid~label {
 .boxbox {
     max-width: 50%;
     margin: auto;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
+}
+
+.box{
+    background-color: var(--bege_branco);
+    margin: 10%;
+    margin-top: 0%;
+    border-radius: 20px;
+    box-shadow: -6px 10px 20px 1px gray;
+
 }
 
 .texto {
@@ -645,27 +653,39 @@ input:valid~label {
 }
 
 .texto1{
-    width: 69%;
+    width: 87%;
 }
 
 .texto2{
-    width: 81%;
+    width: 87%;
 }
 
 .texto3{
-    width: 64%;
+    width: 87%;
+}
+
+.linha{
+    background-color: var(--roxin_escuro);
+    display: flex;
+    position: absolute;
+    left: 20%;
+    top: 33%;
+    width: 60%;
+    border-radius: 2%;
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
 
 .texto4{
-    width: 70%;
+    width: 87%;
 }
 
 .texto5{
-    width: 75%;
+    width: 87%;
 }
 
 .texto6{
-    width: 80%;
+    width: 87%;
 }
 
 .texto7{
@@ -694,6 +714,7 @@ input:valid~label {
     color: var(--roxin_escuro);
     padding: 2%;
     position: relative;
+    border-style: groove;
 }
 
 
@@ -714,7 +735,9 @@ input:valid~label {
     font-size: 1em;
     font-weight: 600;
     color: var(--bege_branco);
-    padding: 1%;
+    padding: 3%;
+    margin-top: 5%;
+
     
 }
 
@@ -1027,4 +1050,80 @@ input:valid~label {
     }
 
     /*LOGIN, CADASTRO e cadastro de vendedor*/
+
+
+    .imagefundo {
+        position: relative;
+        margin-bottom: -10%;
+        opacity: 95%;
+        transform: scale(2.1);
+        z-index: -18;
+        padding: 5%;
+
+    }
+    .background-image {
+        width: 100%;
+
+    }
+
+    .box-cadastro {
+        padding: 5%;
+        text-align: center;
+        background-color: var(--bege_branco);
+        display: flex;
+        justify-content: center;
+        border-radius: 20px;
+        margin-top: -50%;
+    }
+
+    .btn-vendedor {
+        width: 0%;
+        height: 0px;
+        border-radius: 10px;
+        border: none;
+        background: var(--roxin_escuro);
+        outline: none;
+        cursor: pointer;
+        font-size: 1em;
+        font-weight: 600;
+        color: var(--bege_branco);
+        padding: 5%;
+    }
+
+/*formulario vendedor*/
+
+    .box {
+        margin-top: 5%;
+    }
+    .btn-form{
+        position: absolute;
+        left: -1%;
+        width: 100%;
+        border-radius: 30px;
+        border: none;
+        background: var(--roxin_escuro);
+        outline: none;
+        cursor: pointer;
+        font-size: 1.3em;
+        font-weight: 600;
+        color: var(--bege_branco);
+        padding: 5%;
+        margin-top: 10%;
+    
+    }
+
+    .boxbox {
+        max-width: 50%;
+        margin: auto;
+        margin-bottom: 20%;
+    }
+
+    .linha{
+        top: 39%;
+        width: 60%;
+        border-radius: 2%;
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+
 }
