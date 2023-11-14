@@ -631,6 +631,7 @@ input:valid~label {
 .boxbox {
     max-width: 50%;
     margin: auto;
+    margin-bottom: 0px;
     margin-bottom: 10%;
 }
 
@@ -1010,7 +1011,7 @@ input:valid~label {
     #menu {
         position: absolute;
         width: 150px;
-        height: 795px;
+        height: 800px;
         margin: -80px 0px 0 -150px;
         padding: 50px;
         padding-top: 125px;
@@ -1041,11 +1042,14 @@ input:valid~label {
     /*Fim header*/
     /*LOGIN, CADASTRO e cadastro de vendedor
     -DioXD*/
+    .c{
+        min-height: 80vh;
+    }
+
     .loginbox {
         top: 30%;
-        left: 38%;
-        left: 33%;
-        width: 40%;
+        left: 30%;
+        width: 50%;
         display: flex;
     }
 
@@ -1059,6 +1063,7 @@ input:valid~label {
         transform: scale(2.1);
         z-index: -18;
         padding: 5%;
+        height: 100%;
 
     }
     .background-image {
