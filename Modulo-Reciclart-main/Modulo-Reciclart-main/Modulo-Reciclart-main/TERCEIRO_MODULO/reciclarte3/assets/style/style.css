@@ -1,0 +1,135 @@
+:root{
+    --txt-verde: rgba(4, 53, 17, 1);
+    --header2: rgba(253, 255, 254, 1);
+    --footer: rgba(77, 123, 89, 1);
+
+
+
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+
+/*header Branco */
+
+header {
+    display: flex;
+    height: 136px;
+    background-color: var(--header2);
+    align-items: center;
+}
+
+header > img {
+    height: 94px;
+    width: 84.5px;
+    position: absolute;
+    left: 6%;
+}
+
+header > a{
+    color:var(--txt-verde);
+    position: absolute;
+    right: 5%;
+}
+
+/*FIM header Branco */
+
+/*Body com folhas*/
+
+body{
+    
+}
+
+/*Fim Body com folhas*/
+
+/*MAIN*/
+
+.container_g{
+    height:773.28px;
+    align-items: center;
+}
+
+.container_login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    width: 1148px;
+    height: 600px;
+    position: relative;
+    left: 4.5%;
+    top: 11%;
+    border-radius: 1.5%;
+}
+
+.formul{
+    display: flex;
+    flex-direction:column;
+    box-shadow: -1px 0px 6px 2px rgba(97, 85, 85, 0.25);
+    min-height: 100vh;
+    min-width: 483.63px;
+}
+
+.container_login > img{
+    height: 485.6px;
+}
+
+.container_login .social_insta{
+    height:  50.72px;
+}
+
+
+/*FIM MAIN*/
+main{
+    min-height: 100vh;
+}
+/*Footer*/
+
+footer {
+  background-color: var(--footer);
+  display: flex;
+  color: var(--header2);
+  height: 280px;
+  align-items: center;
+}
+
+.footer {
+  list-style-type: none;
+  position: relative;
+    left: 10%;
+  padding: auto;
+}
+
+.footer a {
+  font-size: 25px;
+  color: var(--branco_search);
+}
+
+.footer li{
+    margin-top: 4%;
+}
+
+.butterB {
+  position: relative;
+  height: 113px;
+  width: 101.58px;
+  left: 32%;
+}
+
+.insta {
+  position: relative;
+  left: 60%;
+}
+/* footer */
+
+
+
+
+/*
+HORAS GASTAS NO TOTAL: 
+
+
+*/
