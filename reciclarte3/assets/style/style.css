@@ -4,6 +4,7 @@
   --footer: rgba(77, 123, 89, 1);
   --entrarlogin: rgba(77, 123, 89, 1);
   --inputlogin: rgba(75, 163, 115, 1);
+  --a_login: rgba(50, 86, 59, 1);
 
 
 }
@@ -68,7 +69,7 @@ header>a {
   align-items: center;
   background-color: var(--header2);
   width: 1148px;
-  height: 600px;
+  height: 773.28px;
   position: relative;
   left: 4.5%;
   top: 11%;
@@ -79,7 +80,7 @@ header>a {
   display: flex;
   flex-direction: column;
   box-shadow: -1px 0px 6px 2px rgba(97, 85, 85, 0.25);
-  min-height: 96vh;
+  min-height: 125vh;
   min-width: 43%;
   align-items: center;
 }
@@ -88,8 +89,8 @@ header>a {
   font-size: 3.75rem;
   color: var(--entrarlogin);
   font-weight: 900;
-  margin-top: 8%;
-  padding-bottom: 6%;
+  margin-top: 6%;
+  padding-bottom: 5%;
 }
 
 .labelformula,
@@ -114,8 +115,8 @@ header>a {
   background: transparent;
   border-radius: 5px;
   border: 2px var(--inputlogin);
-  width: 370px;
-  height: 50px;
+  width: 360px;
+  height: 40px;
   box-shadow: rgba(77, 123, 89, 1) 0px 0px 2px 2.5px;
   font-size: 1rem;
   z-index: 99;
@@ -127,14 +128,16 @@ header>a {
   color: var(--inputlogin);
 }
 
-
-
 .container_login>img {
   height: 485.6px;
 }
 
 .container_login .social_insta {
   height: 50.72px;
+}
+
+.link_login{
+  margin: 3% 0; 
 }
 
 .btnlogin{
@@ -156,15 +159,41 @@ header>a {
   letter-spacing: 2px;
   font-size: 14px;
   font-weight: 600;
+  margin: 5% 0 5% 0;
 }
 
-.hr1{
-  padding: 1px 1px 1px 1px;
+.ou-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px; 
+}
+
+.ou-bar {
+  display: inline-block;
+  width: 145px;
+  height: 1px;
+  background-color: var(--txt-verde);
+  margin: 0 5px; /* adjust the spacing between the bars and the letters */
+}
+
+.ou-letter {
+  margin: 0 5px; /* adjust the spacing between the bars and the letters */
+  font-size: 0.75rem; /* adjust the font size to your preference */
+}
+
+.criar{
+  color: var(--a_login);
+  font-size: 1.1rem;
+  font-weight: 900;
+  letter-spacing: 2px;
 }
 
 /*FIM MAIN*/
 main {
-  min-height: 100vh;
+  min-height: 150vh;
+
+  
 }
 
 /*Footer*/
