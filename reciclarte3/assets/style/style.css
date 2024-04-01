@@ -5,17 +5,22 @@
   --entrarlogin: rgba(77, 123, 89, 1);
   --inputlogin: rgba(75, 163, 115, 1);
   --a_login: rgba(50, 86, 59, 1);
+
+
 }
 
+
+
 /*Montserrat*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /*Inter*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
   margin: 0%;
   padding: 0%;
 }
+
 
 /*header Branco */
 
@@ -24,17 +29,17 @@ header {
   height: 136px;
   background-color: var(--header2);
   align-items: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
-header > img {
+header>img {
   height: 94px;
   width: 84.5px;
   position: absolute;
   left: 6%;
 }
 
-header > a {
+header>a {
   color: var(--txt-verde);
   position: absolute;
   right: 5%;
@@ -43,17 +48,20 @@ header > a {
 }
 
 /*FIM header Branco */
+
 /*Body com folhas*/
+
+
+/*Fim Body com folhas*/
+
+/*MAIN*/
 
 .container_g {
   height: 773.28px;
   align-items: center;
   background-image: url(../img/fundo.webp);
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
-
-/*Fim Body com folhas*/
-/*MAIN*/
 
 .container_login {
   display: flex;
@@ -64,7 +72,7 @@ header > a {
   height: 773.28px;
   position: relative;
   left: 4.5%;
-  top: 5.5%;
+  top: 11%;
   border-radius: 1.5%;
 }
 
@@ -72,38 +80,46 @@ header > a {
   display: flex;
   flex-direction: column;
   box-shadow: -1px 0px 6px 2px rgba(97, 85, 85, 0.25);
-  min-height: 132vh;
+  min-height: 125vh;
   min-width: 43%;
   align-items: center;
 }
 
-.h1entrar {
+.h1entrar,
+.h1entrar2{
   font-size: 3.75rem;
   color: var(--entrarlogin);
-  margin-top: 10%;
-  margin-bottom: 6%;
+  font-weight: 900;
+  margin-top: 6%;
+  padding-bottom: 5%;
 }
 
-.h1entrar,
-.criar,
-.btnlogin{
-  font-weight: 900;
+.h1entrar2{
+  font-size: 2.8125rem;
+  margin-top: 10%;
+  margin-bottom: 5%;
 }
 
 .labelformula,
-.labelformula2 {
+.labelformula2,
+.labelformula3{
   font-weight: 400;
   font-size: 0.9375rem;
   letter-spacing: 3px;
   color: var(--txt-verde);
   position: relative;
-  right: 11%;
+  right: 12%;
   margin-bottom: 2%;
 }
 
-.labelformula2 {
+.labelformula2{
   display: relative;
-  right: 30%;
+  right: 31%;
+}
+
+.labelformula3{
+  display: relative;
+  right: 17.8%;
 }
 
 #nome_email_user,
@@ -112,8 +128,8 @@ header > a {
   background: transparent;
   border-radius: 5px;
   border: 2px var(--inputlogin);
-  width: 370px;
-  height: 50px;
+  width: 360px;
+  height: 40px;
   box-shadow: rgba(77, 123, 89, 1) 0px 0px 2px 2.5px;
   font-size: 1rem;
   z-index: 99;
@@ -121,7 +137,11 @@ header > a {
   text-align: left;
 }
 
-.container_login > img {
+#senha_user {
+  color: var(--inputlogin);
+}
+
+.container_login>img {
   height: 485.6px;
 }
 
@@ -129,37 +149,50 @@ header > a {
   height: 50.72px;
 }
 
-.link_login {
-  margin: 3% 0;
+.social_insta2{
+  height: 58.72px;
 }
 
-.btnlogin {
+.link_login2{
+  margin: 10% 0;
+}
+
+.link_login{
+  margin: 3% 0; 
+}
+
+.btnlogin,
+.btnlogin2{
   background-color: var(--entrarlogin);
   color: var(--header2);
-  width: 49%;
-  min-height: 58px;
+  width: 40%;
+  min-height: 50px;
   border-radius: 10px;
+  font-weight: 900;
   font-size: larger;
   letter-spacing: 2px;
   border: var(--entrarlogin) solid 1px;
-  box-shadow: var(--entrarlogin);
-  margin: 5% 0 5% 0;
+  box-shadow: var(--entrarlogin) ;
 }
 
-.esqueceu {
+.btnlogin2{
+  margin: 5% 0 7%;
+}
+
+.esqueceu{
   color: var(--txt-verde);
   text-decoration: none;
   letter-spacing: 2px;
   font-size: 14px;
   font-weight: 600;
-  margin: 6% 0 6% 0;
+  margin: 5% 0 5% 0;
 }
 
 .ou-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 25px;
+  height: 25px; 
 }
 
 .ou-bar {
@@ -167,25 +200,26 @@ header > a {
   width: 145px;
   height: 1px;
   background-color: var(--txt-verde);
-  margin: 0 25px;
+  margin: 0 5px; /* adjust the spacing between the bars and the letters */
 }
 
 .ou-letter {
-  margin: 0 5px; 
-  font-size: 0.75rem;
+  margin: 0 5px; /* adjust the spacing between the bars and the letters */
+  font-size: 0.75rem; /* adjust the font size to your preference */
 }
 
-.criar {
+.criar{
   color: var(--a_login);
   font-size: 1.1rem;
+  font-weight: 900;
   letter-spacing: 2px;
-  margin: 2% 0 5% 0;
 }
 
 /*FIM MAIN*/
-
 main {
   min-height: 150vh;
+
+  
 }
 
 /*Footer*/
@@ -196,13 +230,13 @@ footer {
   color: var(--header2);
   height: 280px;
   align-items: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .footer {
   list-style-type: none;
   position: relative;
-  left: 9%;
+  left: 10%;
   padding: auto;
 }
 
@@ -215,7 +249,7 @@ footer {
   margin-top: 6.5%;
 }
 
-.footer li > a {
+.footer li>a {
   letter-spacing: 5px;
   text-decoration: none;
   text-decoration: underline;
@@ -226,15 +260,21 @@ footer {
   position: relative;
   height: 113px;
   width: 101.58px;
-  left: 27%;
+  left: 32%;
 }
 
 .insta {
   position: relative;
-  left: 50%;
+  left: 60%;
 }
 
 /* footer */
+
+
+
+
 /*
-HORAS GASTAS NO TOTAL: 7h
+HORAS GASTAS NO TOTAL: 2:30
+
+
 */
