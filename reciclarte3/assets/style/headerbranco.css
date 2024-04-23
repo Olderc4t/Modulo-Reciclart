@@ -1,0 +1,271 @@
+:root {
+    --txt-verde: rgba(4, 53, 17, 1);
+    --header2: rgba(253, 255, 254, 1);
+    --footer: rgba(77, 123, 89, 1);
+    --entrarlogin: rgba(77, 123, 89, 1);
+    --inputlogin: rgba(75, 163, 115, 1);
+    --a_login: rgba(50, 86, 59, 1);
+  }
+  
+  /*Montserrat*/
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+  /*Inter*/
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+  
+  * {
+    margin: 0%;
+    padding: 0%;
+  }
+
+header {
+    display: flex;
+    height: 136px;
+    background-color: var(--header2);
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    height: 136px;
+    background-color: var(--header2);
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  header > img {
+    height: 94px;
+    width: 84.5px;
+    position: absolute;
+    left: 6%;
+  }
+  
+  header > a {
+    color: var(--txt-verde);
+    position: absolute;
+    right: 5%;
+    letter-spacing: 3px;
+    font-weight: bold;
+  }
+
+  /*MAIN*/
+
+.container_g {
+    height: 773.28px;
+    align-items: center;
+    background-image: url(../img/fundo.webp);
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .container_login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--header2);
+    width: 1148px;
+    height: 773.28px;
+    position: relative;
+    left: 4.5%;
+    top: 11%;
+    border-radius: 1.5%;
+  }
+  
+  .formul {
+    display: flex;
+    flex-direction: column;
+    box-shadow: -1px 0px 6px 2px rgba(97, 85, 85, 0.25);
+    min-height: 125vh;
+    min-width: 43%;
+    align-items: center;
+  }
+  
+  .h1entrar,
+  .h1entrar2{
+    font-size: 3.75rem;
+    color: var(--entrarlogin);
+    font-weight: 900;
+    margin-top: 6%;
+    padding-bottom: 5%;
+  }
+  
+  .h1entrar2{
+    font-size: 2.8125rem;
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+  
+  .labelformula,
+  .labelformula2,
+  .labelformula3{
+    font-weight: 400;
+    font-size: 0.9375rem;
+    letter-spacing: 3px;
+    color: var(--txt-verde);
+    position: relative;
+    right: 12%;
+    margin-bottom: 2%;
+  }
+  
+  .labelformula2{
+    display: relative;
+    right: 31%;
+  }
+  
+  .labelformula3{
+    display: relative;
+    right: 17.8%;
+  }
+  
+  #nome_email_user,
+  #senha_user {
+    color: var(--txt-verde);
+    background: transparent;
+    border-radius: 5px;
+    border: 2px var(--inputlogin);
+    width: 360px;
+    height: 40px;
+    box-shadow: rgba(77, 123, 89, 1) 0px 0px 2px 2.5px;
+    font-size: 1rem;
+    z-index: 99;
+    margin-bottom: 5%;
+    text-align: left;
+  }
+  
+  #senha_user {
+    color: var(--inputlogin);
+  }
+  
+  .container_login>img {
+    height: 485.6px;
+  }
+  
+  .container_login .social_insta {
+    height: 50.72px;
+  }
+  
+  .social_insta2{
+    height: 58.72px;
+  }
+  
+  .link_login2{
+    margin: 10% 0;
+  }
+  
+  .link_login{
+    margin: 3% 0; 
+  }
+  
+  .btnlogin,
+  .btnlogin2{
+    background-color: var(--entrarlogin);
+    color: var(--header2);
+    width: 40%;
+    min-height: 50px;
+    border-radius: 10px;
+    font-weight: 900;
+    font-size: larger;
+    letter-spacing: 2px;
+    border: var(--entrarlogin) solid 1px;
+    box-shadow: var(--entrarlogin) ;
+  }
+  
+  .btnlogin2{
+    margin: 5% 0 7%;
+  }
+  
+  .esqueceu{
+    color: var(--txt-verde);
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 5% 0 5% 0;
+  }
+  
+  .ou-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px; 
+  }
+  
+  .ou-bar {
+    display: inline-block;
+    width: 145px;
+    height: 1px;
+    background-color: var(--txt-verde);
+    margin: 0 5px; /* adjust the spacing between the bars and the letters */
+  }
+  
+  .ou-letter {
+    margin: 0 5px; /* adjust the spacing between the bars and the letters */
+    font-size: 0.75rem; /* adjust the font size to your preference */
+  }
+  
+  .criar{
+    color: var(--a_login);
+    font-size: 1.1rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+  }
+  
+  /*FIM MAIN*/
+  main {
+    min-height: 150vh;
+  
+    
+  }
+  
+  /*Footer*/
+  
+  footer {
+    background-color: var(--footer);
+    display: flex;
+    color: var(--header2);
+    height: 280px;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .footer {
+    list-style-type: none;
+    position: relative;
+    left: 10%;
+    padding: auto;
+  }
+  
+  .footer a {
+    font-size: 25px;
+    color: var(--branco_search);
+  }
+  
+  .footer li {
+    margin-top: 6.5%;
+  }
+  
+  .footer li>a {
+    letter-spacing: 5px;
+    text-decoration: none;
+    text-decoration: underline;
+    text-underline-offset: 12%;
+  }
+  
+  .butterB {
+    position: relative;
+    height: 113px;
+    width: 101.58px;
+    left: 32%;
+  }
+  
+  .insta {
+    position: relative;
+    left: 60%;
+  }
+  
+  /* footer */
