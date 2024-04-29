@@ -7,6 +7,37 @@
   --a_login: rgba(50, 86, 59, 1);
 }
 
+.categorias{
+  display: flex;
+  justify-content: space-between;
+  margin: 25% 32%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 450;
+
+}
+
+
+
+.green-line-vertical::before {
+  content: "";
+  display: inline-block;
+  min-width: 1.5px; 
+  height: 100%;
+  background-color: var(--txt-verde);
+  vertical-align: middle;
+}
+
+
+.hr{
+    width: 80%;
+    height: 1px;
+    background-color: var(--txt-verde);
+    position: absolute;
+    top: 165%;
+    right: 10%;
+}
+
 /*Montserrat*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /*Inter*/
@@ -15,6 +46,7 @@
 * {
   margin: 0%;
   padding: 0%;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /*header Branco */
