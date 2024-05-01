@@ -7,17 +7,6 @@
   --a_login: rgba(50, 86, 59, 1);
 }
 
-.categorias{
-  display: flex;
-  justify-content: space-between;
-  margin: 25% 32%;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  font-weight: 450;
-
-}
-
-
 
 .green-line-vertical::before {
   content: "";
@@ -32,10 +21,11 @@
 .hr{
     width: 80%;
     height: 1px;
-    background-color: var(--txt-verde);
+    box-shadow: 1px 2px 1px var(--a_login);
     position: absolute;
-    top: 165%;
+    top: 169%;
     right: 10%;
+    opacity: 0.5;
 }
 
 /*Montserrat*/
@@ -49,7 +39,7 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-/*header Branco */
+/*header HOME */
 
 .logo {
   height: 90px;
@@ -114,7 +104,7 @@
 }
 
 
-/*Body com folhas*/
+/*Carrosel HOME*/
 .carousel {
   position: relative;
   overflow: hidden;
@@ -171,11 +161,7 @@
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-/*Fim Body com folhas*/
-
-
-
-
+/*informações HOME*/
 .info{
   z-index: 25;
   position: absolute;
@@ -184,9 +170,45 @@
 }
 
 
+/* tipos de produtos HOME */
+.categorias{
+  display: flex;
+  justify-content: space-between;
+  margin: 30% 28% 15% ;
+}
+
+.categorias h3{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 450;
+  letter-spacing:  6px;
+}
+
+
+/* DESTAQUES HOME */
+.dest{
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--txt-verde);
+  margin: 0% 10%;
+}
+
+.produtos-destaques{
+  margin: 10% 10%;
+}
+
+.seta{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.next{
+  transform: rotate(180deg);
+  
+}
 
 /*Footer*/
-
 footer {
   background-color: var(--footer);
   display: flex;
@@ -230,14 +252,9 @@ footer {
   position: relative;
   left: 55%;
 }
-
 /* footer */
-
-
-
-
 /*
-HORAS GASTAS NO TOTAL: 2:30
+HORAS GASTAS NO TOTAL: 12h
 
 
 */
