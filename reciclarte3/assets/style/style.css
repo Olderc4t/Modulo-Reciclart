@@ -5,6 +5,7 @@
   --entrarlogin: rgba(77, 123, 89, 1);
   --inputlogin: rgba(75, 163, 115, 1);
   --a_login: rgba(50, 86, 59, 1);
+  --pronta_entrega:#FF9900;
 }
 
 
@@ -195,6 +196,8 @@
 
 .produtos-destaques{
   margin: 10% 10%;
+  display: flex;
+  flex-direction: row;
 }
 
 .seta{
@@ -206,6 +209,59 @@
 .next{
   transform: rotate(180deg);
   
+}
+
+.produto{
+  display: flex;
+  flex-direction: column;
+  min-height: 321px;
+  min-width: 242px;
+  max-width: 242px;
+  max-height: 321px;
+  background-color: var(--header2);
+  box-shadow:  1px 1px 8px grey;
+}
+
+.produto span{
+  margin-left: 5%;
+  margin-top: 2%;
+}
+
+.produto-nome{
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.loja-nome{
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.produto-valor{
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+
+.produto-nome, .loja-nome, .produto-valor{
+  color: var(--txt-verde);
+}
+
+
+
+.pronta-entrega{
+  font-weight: 600;
+  font-size: 13px;
+  background-color:var(--pronta_entrega) ;
+  min-width:fit-content;
+  max-width: fit-content;
+  padding: 1% 1%;
+  border-radius: 2px;
+  color: #fdfdfd;
+  position: relative;
+  left: 45%;
+  bottom: 8%;
 }
 
 /*Footer*/
