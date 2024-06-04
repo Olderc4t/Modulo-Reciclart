@@ -1,0 +1,185 @@
+:root {
+    --txt-verde: rgba(4, 53, 17, 1);
+    --header2: rgba(253, 255, 254, 1);
+    --footer: rgba(77, 123, 89, 1);
+    --entrarlogin: rgba(77, 123, 89, 1);
+    --inputlogin: rgba(75, 163, 115, 1);
+    --a_login: rgba(50, 86, 59, 1);
+    --pronta_entrega:#FF9900;
+    --reciclado:rgba(41, 136, 84, 1);
+    --mais:rgb(207, 234, 220);
+  }
+
+/*Montserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/*Inter*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body * {
+    font-family: 'Inter' , sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+.product-container {
+    display: flex;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+}
+
+.product-image {
+    align-self:center;
+    margin: 0 3%;
+}
+
+.product-image img {
+    width: 320px;
+    height: 320px;
+    border-radius: 4px;
+}
+
+.product-thumb img {
+    width: 110px;
+    height: 110px;
+    border-radius: 4px;
+    
+}
+
+.product-thumbnails{
+    align-self: center;
+    margin: 0 0% 0 3%;
+}
+
+
+.product-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--a_login);
+    font-weight: 600;
+    letter-spacing:0.5vh;
+    margin-top: -6%;
+}
+
+.product-price {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: var(--a_login);
+    letter-spacing:0.5vh;
+    margin-bottom: 3%;
+    margin-top: 2%;
+}
+
+.badge {
+    display: inline-block;
+    background-color: var(--reciclado);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 1px;
+    margin: 0% 0%;
+    width: fit-content;
+    font-weight: 900;
+    letter-spacing: 0.2vh;
+}
+
+.iam{
+    display: flex;
+    flex-direction: column;
+}
+
+.infovendedor{
+    display: flex;
+    color: var(--txt-verde);
+    width: 120%;
+}
+
+.product-info {
+    margin: 1.5% 0;
+    margin-bottom: 20px;
+    align-self: center;
+}
+
+.product-info-label {
+    font-weight: lighter;
+    margin-right: 5px;
+    margin: 3% 0%;
+    letter-spacing: 0.3vh;
+    color: rgb(173, 173, 173);
+}
+
+.product-info-value {
+    font-weight: lighter;
+    letter-spacing: 0.3vh;
+    color: rgb(173, 173, 173);
+
+}
+
+.vertical-bar {
+    align-self: center;
+    width: 1.5px;
+    height: 20px; 
+    background-color: rgb(200, 200, 200); 
+    margin: 0 2%; 
+  }
+
+.action1 {
+    display: flex;
+    margin: 3% 0;
+}
+
+
+.action1 label,span{
+    margin: 0 5%;
+    align-content: center;
+
+}
+.action2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+}
+
+.button {
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: lighter;
+}
+
+.action1 input{
+    justify-content: center;
+    text-align:center;
+    border: none;
+    padding: 1% 1%;
+}
+
+.button.primary {
+    background-color: var(--header2);
+    color: var(--txt-verde);
+}
+
+.button.secondary {
+    background-color: var(--mais);
+    color: var(--inputlogin);
+    padding: 2% 3%;
+    align-self: center;
+    font-size: 1.75rem;
+
+}
+
+.button.third{
+    background-color: var(--inputlogin);
+    color: var(--header2);
+}
+
+.action2 > button{
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 3% 2%;
+    box-shadow: 1px 1px 5px 0px gray ;
+    letter-spacing: 1px;
+    margin: 5% 0% 0% 0%;
+}
+

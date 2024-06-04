@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/produto.css">
+    <title>Produto Detalhe</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <main class="product-container">
+        <aside class="product-thumbnails">
+            <figure class="product-thumb">
+                <img src="./assets/img/kekw.jpg" alt="Produto 1">
+            </figure>
+            <figure class="product-thumb">
+                <img src="./assets/img/kekw.jpg" alt="Produto 2">
+            </figure>
+            <figure class="product-thumb">
+                <img src="./assets/img/kekw.jpg" alt="Produto 3">
+            </figure>
+        </aside>
+        <figure class="product-image">
+            <img src="./assets/img/kekw.jpg" alt="Produto">
+        </figure>
+        <section class="product-info">
+            <section class="iam">
+                <h1 class="product-title">Nome do produto</h1>
+                <h2 class="product-price">R$30,00</h2>
+                <span class="badge">100% RECICLADO</span>
+            </section>
+            <section class="infovendedor">
+                <p class="product-info-label">NOME DO VENDEDOR</p>
+                <span class="vertical-bar"></span>
+                <p class="product-info-label">ENDEREÇO DO VENDEDOR</p>
+            </section>
+
+            <section class="actions">
+                <section class="action1">
+                    <label for="quantity" class="product-info-label">Quantidade:</label>
+                    <button type="button" class="button secondary">-</button>
+                    <input type="number" id="quantity" value="1" min="1" max="20">
+                    <button type="button" class="button secondary">+</button>
+                    <span class="product-info-value">20 peças disponíveis</span>
+                </section>
+                <section class="action2">
+                    <button type="button" class="button primary">ADICIONAR A CESTA</button>
+                    <button type="button" class="button third">COMPRAR AGORA</button>
+                </section>
+            </section>
+        </section>
+
+    </main>
+</body>
+
+</html>
